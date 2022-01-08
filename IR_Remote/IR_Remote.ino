@@ -10,7 +10,7 @@ void setup() {
 
   Serial.begin(9600);                         
   Serial.println("Starting Serial Monitor");  
-  pinMode(ledPin1, OUTPUT);
+  pinMode(ledPin, OUTPUT);
   irrecv.enableIRIn();                        
                                
 }
@@ -30,7 +30,7 @@ void Remote()  {
   switch(results.value)  {                           
 
   case 0xFFA25D:           
-       digitalWrite(ledPin1, HIGH);
+       digitalWrite(ledPin, HIGH);
        
     break;
   

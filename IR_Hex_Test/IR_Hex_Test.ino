@@ -1,6 +1,6 @@
 #include "IRremote.h"
 
-int IRpin = D7;
+int IRpin = 7;
 IRrecv irrecv(IRpin);
 decode_results results;
 
